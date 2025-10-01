@@ -9,6 +9,9 @@ const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
 
 const app = express();
+const PORT = 'http://localhost:3000';
+
+console.log("Servidor rodando na porta " + PORT);
 
 app.use(logger('dev'));
 app.use(express.json());
